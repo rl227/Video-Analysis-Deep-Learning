@@ -1,0 +1,1 @@
+/data_b/bd-recommend/lzm/face_worker/lfw_evaluate_C++/build/CMakeFiles/face_samples.dir

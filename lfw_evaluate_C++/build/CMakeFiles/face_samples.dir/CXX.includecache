@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/data_b/bd-recommend/lzm/face_worker/lfw_evaluate_C++/readPath.cpp
+readPath.h
+/data_b/bd-recommend/lzm/face_worker/lfw_evaluate_C++/readPath.h
+
+/data_b/bd-recommend/lzm/face_worker/lfw_evaluate_C++/readPath.h
+iostream
+-
+algorithm
+-
+vector
+-
+string
+-
+fstream
+-
+unistd.h
+-
+dirent.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+

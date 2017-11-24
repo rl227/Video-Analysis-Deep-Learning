@@ -1,0 +1,14 @@
+CC=g++ -std=c++11
+INCLUDE=$(shell pkg-config --cflags opencv)  
+LIBS=$(shell pkg-config --libs opencv)
+
+CAFFE_INC=-I/data_b/bd-recommend/lzm/caffe/build/install/include
+CAFFE_LIB=-L/data_b/bd-recommend/lzm/caffe/build/install/lib64 -lcaffe
+
+SOURCE:=$(wildcard *.cpp) 
+BIN=split_train_test
+$(BIN):$(SOURCE)
+	$(CC) $(SOURCE) -o $(BIN) $(INCLUDE) $(CAFFE_INC) $(LIBS) $(CAFFE_LIB)
+clean:
+	rm -rf $(BIN)  
+
